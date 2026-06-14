@@ -7,44 +7,57 @@ Para esse projeto, além de mudarmos o JSON para o JSON Server, vamos permitir o
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
+- Nome: Crispim Bruno Da Silva Junior
+- Matricula: 923833
+- Proposta de projeto escolhida: Livraria Online (LibroShop)
 - Breve descrição sobre seu projeto:
 
-**Registros do trabalho**
+LibroShop é uma livraria online fictícia que exibe um acervo de livros clássicos da literatura, com página inicial com cards, página de detalhes e formulário de cadastro. Os dados são servidos por um JSON Server local, consumidos de forma assíncrona com a Fetch API.
 
-<< DADOS DO DB.JSON (ENTIDADE PRINCIPAL E SECUNDÁRIA) >>
+```
+Coleções existentes
+
+
+livros — coleção principal. Guarda cada livro do acervo com título, autor, descrição curta e completa, imagem, categoria, preço, avaliação, páginas, editora, ano, tags, destaque e estoque.
+categorias — guarda as categorias disponíveis com nome, slug e ícone emoji.
+avaliacoes — guarda notas e comentários de usuários vinculados a um livro pelo livroId.
+favoritos — guarda os IDs dos livros marcados como favoritos.
+
+
+<< DADOS DO DB.JSON (ENTIDADE PRINCIPAL E SECUNDÁRIA) >>  
 
 ```json
 {
-  "cidades": [
-    {
-      "id": 1,
-      "nome": "Paris",
-      "descricao": "Capital francesa famosa por arte, gastronomia e arquitetura icônica.",
-      "conteudo": "Paris oferece museus de classe mundial, boulevards arborizados e cafés charmosos. Ideal para quem busca história, cultura e experiências gastronômicas.",
-      "pais": "França",
-      "destaque": true,
-      "data": "2025-03-30",
-      "imagemPrincipal": "img/paris.jpg"
-    }
-  ],
-  "atracoes": [
-    {
-      "id": 1,
-      "cidadeId": 1,
-      "nome": "Torre Eiffel",
-      "descricao": "Monumento símbolo de Paris com mirantes panorâmicos.",
-      "imagem": "img/atracoes/torre_eiffel.jpg"
-    }
-  ]
+  "id": 1,
+  "titulo": "O Senhor dos Anéis",
+  "autor": "J.R.R. Tolkien",
+  "descricaoCurta": "A épica jornada de Frodo para destruir o Um Anel.",
+  "descricaoCompleta": "Em uma terra chamada Terra-média...",
+  "imagem": "https://covers.openlibrary.org/b/id/8743161-L.jpg",
+  "categoria": "Fantasia",
+  "preco": 89.90,
+  "avaliacao": 4.9,
+  "paginas": 1178,
+  "editora": "HarperCollins",
+  "anoPublicacao": 1954,
+  "tags": ["fantasia", "épico", "aventura", "clássico", "tolkien"],
+  "destaque": true,
+  "estoque": 15
 }
+
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "Fantasia",
+      "slug": "fantasia",
+      "icone": "🧙",
+      "descricao": "Mundos mágicos, criaturas fantásticas e aventuras épicas"
+    },
+  ]
 ```
 
-<< COLOQUE A IMAGEM DA HOME AQUI >>
-
-<< COLOQUE A IMAGEM DA TELA DE DETALHES AQUI >>
+![alt text](image.png)
+![alt text](image-1.png)
 
 
 
