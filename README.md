@@ -22,11 +22,11 @@ livros — coleção principal. Guarda cada livro do acervo com título, autor, 
 categorias — guarda as categorias disponíveis com nome, slug e ícone emoji.
 avaliacoes — guarda notas e comentários de usuários vinculados a um livro pelo livroId.
 favoritos — guarda os IDs dos livros marcados como favoritos.
-
-
+```
+```
 << DADOS DO DB.JSON (ENTIDADE PRINCIPAL E SECUNDÁRIA) >>  
 
-```json
+json
 {
   "id": 1,
   "titulo": "O Senhor dos Anéis",
@@ -44,7 +44,6 @@ favoritos — guarda os IDs dos livros marcados como favoritos.
   "destaque": true,
   "estoque": 15
 }
-
   "categorias": [
     {
       "id": "1",
